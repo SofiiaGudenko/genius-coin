@@ -1,0 +1,175 @@
+/* Главный контейнер */
+.hero {
+    background-image: url('../../images/green-bg.png'); /* замените на путь к изображению */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    position: relative;
+}
+
+/* Деревенская текстура */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%238b5a2b" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.3"/></svg>'),
+        linear-gradient(to bottom, transparent 95%, var(--wood) 100%);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.slogan__section {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center; /* Центрирует только этот элемент по горизонтали */
+
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.45); /* затемнение */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 15px;
+    z-index: 2;
+  }
+  
+
+.logo {
+    /* mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    mask-size: cover; */
+}
+.logo img {
+    display: block; /* Убирает отступ снизу */
+    /* mask-image: linear-gradient(to bottom, black 96%, transparent 100%); */
+    max-width: 700px;
+}
+/* Слоган */
+.slogan {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    position: relative;
+    line-height: 1.3;
+}
+
+.slogan::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+    margin: 20px auto;
+    opacity: 0.7;
+}
+
+.ticker-wrap {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    z-index: 100;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation: ticker 30s linear infinite;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-shadow: 0 0 5px var(--glitch);
+}
+
+.ticker span {
+    margin: 0 40px;
+    position: relative;
+}
+
+.ticker span::after {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    right: -25px;
+    animation: blink 1s step-end infinite;
+}
+
+.main-title {
+    font-family: 'Anton';
+    font-style: normal;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    margin: 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    /* font-weight: 600; */
+}
+
+.title-word {
+    display: inline-block;
+    position: relative;
+}
+
+.gold-coin {
+    color: transparent;
+    background: linear-gradient(
+        135deg,
+        #daa520 0%,
+        #ffd700 25%,
+        #fff8a6 50%,
+        #ffd700 75%,
+        #daa520 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+/* Дополнительные эффекты для "Coin" */
+.gold-coin::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #ffd700,
+        transparent
+    );
+    opacity: 0.7;
+}
+
+/* Анимация монеток */
+.coin {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="gold" stroke="%23d4af37" stroke-width="2"/><text x="12" y="16" font-size="10" text-anchor="middle" fill="%23000">GEN</text></svg>') no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+}
