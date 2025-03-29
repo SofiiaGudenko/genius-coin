@@ -1,6 +1,6 @@
 /* Главный контейнер */
 .hero {
-    background-image: url('../../images/green-bg.png'); /* замените на путь к изображению */
+    background-image: url('/images/green-bg.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

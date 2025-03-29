@@ -136,19 +136,25 @@
     color: #000;
   }
   
-  /* Адаптивность */
   @media (max-width: 768px) {
-    .utility-grid {
-      grid-template-columns: 1fr;
-    }
-    
     .cta-buttons {
-      flex-direction: column;
+        flex-direction: column;
+        align-items: center; /* Центрируем кнопки */
+        gap: 15px; /* Уменьшаем промежутки */
     }
     
     .cta-buttons .btn {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
+        width: 100%;
+        max-width: 280px; /* Чуть шире для мобильных */
+        margin: 0; /* Убираем auto, так как есть align-items */
     }
-  }
+    
+    .cta-block {
+        padding: 30px 20px; /* Уменьшаем отступы */
+    }
+    
+    .cta-block h3 {
+        font-size: 1.5rem; /* Уменьшаем заголовок */
+        margin-bottom: 20px;
+    }
+}
