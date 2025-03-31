@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: 'Anton', serif;
     src: url('/fonts/Anton-Regular.woff2') format('woff2'),
@@ -10,8 +11,8 @@
 
 @font-face {
     font-family: 'Montserrat', sans-serif;
-    src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-        url('/fonts/Montserrat-ExtraBold.woff') format('woff');
+    src: url('fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('fonts/Montserrat-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -36,16 +37,9 @@
 }
 
 @font-face {
-    font-family: 'Courier New', monospace;
-    src: url('CourierNew.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Courier New', monospace;
-    src: url('CourierNew.woff') format('woff');
+    font-family: 'Lora', serif;
+    src: url('/fonts/Lora-Regular.woff2') format('woff2'),
+        url('/fonts/Lora-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
