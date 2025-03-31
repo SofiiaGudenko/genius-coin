@@ -20,7 +20,7 @@
 }
 
 .slogan__section {
-  font-family: "Anton", serif;
+  /* font-family: "Lora", serif; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +101,7 @@
 }
 
 .main-title {
-  font-family: "Anton";
+  font-family: "Lora", serif;
   font-style: normal;
   font-size: clamp(2.5rem, 8vw, 5rem);
   margin: 0;
