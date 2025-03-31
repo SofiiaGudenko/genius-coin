@@ -1,160 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#6e45e2">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#6e45e2" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
     <link rel="icon" type="image/svg+xml" href="/images/icon.svg" />
     <title>Genius Coin (GEN) - Интеллектуальный капитал новой эры</title>
-    <meta name="description" content="Genius Coin — инновационная криптовалюта 6-в-1: мемкоин с реальной ценностью, земельными активами и DAO-экосистемой. Инвестируйте в будущее децентрализованной экономики.">
-    <meta name="keywords" content="Genius Coin, GEN, криптовалюта, DAO, мемкоин, блокчейн, инвестиции">
-    <link rel="stylesheet" href="/src/styles/main.css">
-</head>
+    <meta
+      name="description"
+      content="GeniusCoin ($GEN) — это токен нового поколения, в основе которого лежит реальная экономика: инвестиции 6 в 1 — в криптовалюту, землю, сельское хозяйство, недвижимость, туризм и человеческий капитал."
+    />
+    <meta
+      name="keywords"
+      content="Genius Coin, GEN, криптовалюта, DAO, мемкоин, блокчейн, инвестиции"
+    />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
   <body>
-    <div id="buyModal" class="modal">
-      <div class="modal-overlay"></div>
-      <div class="modal-container">
-        <button class="modal-close">&times;</button>
-        <div class="form-wrapper">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvpGgtnrVVYpoIEBLa153sdf4D23G5gRBr7E-NUaCYU0NrmQ/viewform?embedded=true" 
-                  frameborder="0" 
-                  marginheight="0" 
-                  marginwidth="0"
-                  class="embedded-form">Загрузка...</iframe>
+    <header class="hero">
+      <div class="slogan__section">
+        <h1 class="main-title">
+          <span class="title-word">Genius</span>
+          <span class="title-word gold-coin">Coin</span>
+        </h1>
+        <h2 class="slogan">
+          Интеллектуальный капитал.<br>
+          Земля. Свобода.<br>
+          <span class="glitch-text">Добро пожаловать в новую реальность с GEN.</span>
+        </h2>
+    
+        <div class="buttons">
+          <a href="#buy" class="btn btn-primary btn-gold buy-button">Купить GEN</a>
+          <a href="/files/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Whitepaper</a>
+          <a href="#community" class="btn btn-primary">Сообщество</a>
         </div>
       </div>
-    </div>
-      <header class="hero">
-          <div class="slogan__section">
-              <h1 class="main-title">
-                  <span class="title-word">Genius</span>
-                  <span class="title-word gold-coin">Coin</span>
-              </h1>
-              <h2 class="slogan">
-                  Интеллектуальный капитал.<br>
-                  Земля. Свобода.<br>
-                  <span style="color: var(--accent); animation: glitch 0.5s linear infinite;">Добро пожаловать в новую реальность с GEN.</span>
-              </h2>
-              
-              <div class="buttons">
-                  <button class="btn btn-primary btn-gold buy-button" id="buyButton">Купить GEN</button>
-                  <button class="btn btn-primary">Whitepaper</button>
-                  <button class="btn btn-primary">Сообщество</button>
-              </div> 
+      <div class="logo">
+        <img
+          src="/images/header-foto.png"
+          alt="Логотип Genius Coin - символ интеллектуального капитала"
+          width="700"
+          height="auto"
+          loading="eager"
+        >
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__content">
+            <h2 class="about__title scroll-animate">
+              <span class="gold-gradient-text">Genius</span> в деталях
+              <span class="title-decoration"></span>
+            </h2>
+            <p class="about__text scroll-animate delay-100">
+              $GEN — инвестиции 6 в 1: криптовалюта, земля, сельское хозяйство,
+              недвижимость, туризм и человеческий капитал
+            </p>
+
+            <div class="about__features">
+              <div class="feature-card scroll-animate delay-200">
+                <div class="feature-card__icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,11.99H19C18.47,15.11 15.72,17.78 12,18.92V12H5V6.3L12,3.19V11.99Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Fair Launch</h3>
+                <p class="feature-card__text">
+                  Равные условия старта на TON Raffles. Hardcap: $50,000,
+                  Softcap: $15,000
+                </p>
+                <div class="utility-badge">1 апр - 1 мая</div>
+                <div class="feature-wave"></div>
+              </div>
+
+              <div class="feature-card scroll-animate delay-300">
+                <div class="feature-card__icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                      d="M17.63,5.84C17.27,5.33 16.67,5 16,5H5A2,2 0 0,0 3,7V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V8C21,7.37 20.66,6.77 20.15,6.42L17.63,5.84M8.45,8H15.55L16.72,9.17V10H7.28V9.17L8.45,8M7,11H17V16H7V11M16,17V19H8V17H16Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Реальные активы</h3>
+                <p class="feature-card__text">
+                  CrimeaVilldgeCoin ($GEN) – аналог валюты экосистемы, которая
+                  позволяет приобретать реальные товары и услуги.
+                </p>
+                <div class="feature-wave"></div>
+              </div>
+
+              <div class="feature-card scroll-animate delay-200">
+                <div class="feature-card__icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12,2L1,12H4V22H20V12H23L12,2M11.5,15V13H12.5V15H11.5M11.5,11V7H12.5V11H11.5Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Дефляция</h3>
+                <p class="feature-card__text">
+                  Сжигание 0.5% от покупок земли + 1% комиссий маркетплейса
+                </p>
+                <div class="feature-wave"></div>
+              </div>
+
+              <div class="feature-card scroll-animate delay-300">
+                <div class="feature-card__icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7M12,10A1.5,1.5 0 0,0 10.5,11.5A1.5,1.5 0 0,0 12,13A1.5,1.5 0 0,0 13.5,11.5A1.5,1.5 0 0,0 12,10Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Эко-экономика</h3>
+                <p class="feature-card__text">
+                  Поддержка органического сельского хозяйства и устойчивого
+                  туризма
+                </p>
+                <div class="feature-wave"></div>
+              </div>
             </div>
-            <div class="logo">
-              <img src="/images/header-foto.png" alt="Логотип Genius Coin - символ интеллектуального капитала">
           </div>
-  
-          
-      </header>
 
-      <main class="main">
-
-        <section class="about" id="about">
-          <div class="about__container">
-              <div class="about__content">
-                  <h2 class="about__title scroll-animate"><span class="gold-gradient-text">Genius</span> в деталях</h2>
-                  <p class="about__text scroll-animate delay-100">Genius Coin — это не просто криптовалюта, а революционная экосистема, объединяющая 6 ключевых преимуществ в одном токене.</p>
-                  
-                  <div class="about__features">
-                      <div class="feature-card scroll-animate delay-200">
-                          <div class="feature-card__icon">💎</div>
-                          <h3 class="feature-card__title">Реальные активы</h3>
-                          <p class="feature-card__text">50% средств идут на приобретение земель и недвижимости, обеспечивая реальную ценность.</p>
-                      </div>
-                      
-                      <div class="feature-card scroll-animate delay-300">
-                          <div class="feature-card__icon">🌐</div>
-                          <h3 class="feature-card__title">DAO управление</h3>
-                          <p class="feature-card__text">Сообщество GEN принимает ключевые решения о развитии экосистемы.</p>
-                      </div>
-                      
-                      <div class="feature-card scroll-animate delay-200">
-                          <div class="feature-card__icon">🚀</div>
-                          <h3 class="feature-card__title">Мем-культура</h3>
-                          <p class="feature-card__text">Вирусный потенциал GeniusCoin с реальной экономикой за токеном.</p>
-                      </div>
-                      
-                      <div class="feature-card scroll-animate delay-300">
-                          <div class="feature-card__icon">🔄</div>
-                          <h3 class="feature-card__title">Механизмы сжигания</h3>
-                          <p class="feature-card__text">Регулярный выкуп и сжигание токенов для поддержания дефицита.</p>
-                      </div>
-                  </div>
+          <div class="about__counter scroll-animate delay-400">
+            <div class="burn-counter">
+              <div class="counter-header">
+                <div class="fire-icon">🔥</div>
+                <h3>Токены GEN сожжены</h3>
+                <div class="fire-icon">🔥</div>
               </div>
-              
-              <div class="about__counter scroll-animate delay-400">
-                  <div class="burn-counter">
-                      <div class="counter-header">
-                          <div class="fire-icon">🔥</div>
-                          <h3>Токены GEN сожжены</h3>
-                          <div class="fire-icon">🔥</div>
-                      </div>
-                      <div class="counter-wrapper">
-                          <div class="counter" id="aboutBurnCounter">42,069,000</div>
-                          <div class="counter-label">Уничтожено навсегда</div>
-                      </div>
-                      <div class="counter-progress">
-                          <div class="progress-bar" id="burnProgress"></div>
-                          <div class="progress-text" id="burnProgressText">5.8% от общей эмиссии</div>
-                      </div>
-                      <div class="counter-message">
-                          Каждое сожжение увеличивает ценность оставшихся токенов
-                      </div>
-                  </div>
+              <div class="counter-wrapper">
+                <div class="counter">0</div>
+                <div class="counter-label">Уничтожено навсегда</div>
               </div>
+              <div class="counter-progress">
+                <div class="progress-bar" id="burnProgress"></div>
+                <div class="progress-text" id="burnProgressText">
+                  0% от общей эмиссии
+                </div>
+              </div>
+              <div class="counter-message">
+                Каждое сожжение увеличивает ценность оставшихся токенов
+              </div>
+            </div>
           </div>
-          </div>
+        </div>
       </section>
 
       <section class="utility-section" id="utility">
         <div class="utility-container">
-          <h2 class="section-title scroll-animate"><span class="glitch-text">ЭКОСИСТЕМА</span> GEN</h2>
-          <p class="team-subtitle scroll-animate delay-100">Реальные способы использования токена GEN</p>
-          
+          <h2 class="section-title scroll-animate">
+            <span class="glitch-text">ЭКОСИСТЕМА</span> GEN
+          </h2>
+          <p class="team-subtitle scroll-animate delay-100">
+            Реальные способы использования токена GEN
+          </p>
+
           <div class="utility-grid">
             <div class="utility-card scroll-animate delay-100">
               <div class="utility-icon">🏡</div>
-              <h3>Покупка земли</h3>
-              <p>Используйте GEN для инвестиций в земельные участки в "Городах Гениев"</p>
+              <h3>Земля и недвижимость</h3>
+              <p>
+                Покупка участков в локациях CrimeaVilldge с NFT-подтверждением
+                собственности. Инвестирование в строительство.
+              </p>
               <div class="utility-badge">DAO-голосование</div>
             </div>
-            
+
             <div class="utility-card scroll-animate delay-200">
-              <div class="utility-icon">🌴</div>
-              <h3>Туризм и аренда</h3>
-              <p>Бронируйте виллы и экскурсии со скидкой до 30% за оплату GEN</p>
-              <div class="utility-badge">Скоро</div>
+              <div class="utility-icon">🛒</div>
+              <h3>Товары и услуги</h3>
+              <p>
+                Органическая продукция, одежда, сувениры от партнёров. Аренда
+                транспорта (авто, яхты, самолёты).
+              </p>
+              <div class="utility-badge">Кэшбэк 5-10%</div>
             </div>
-            
+
             <div class="utility-card scroll-animate delay-300">
               <div class="utility-icon">🎓</div>
-              <h3>Образование</h3>
-              <p>Доступ к закрытым курсам и клубам для держателей от 10,000 GEN</p>
+              <h3>Образование и клубы</h3>
+              <p>
+                Закрытые курсы по блокчейну и инвестициям. Доступ к эксклюзивным
+                мероприятиям и бизнес-сообществам.
+              </p>
               <div class="utility-badge">NFT-доступ</div>
             </div>
-            
+
             <div class="utility-card scroll-animate delay-400">
               <div class="utility-icon">⚡</div>
               <h3>Привилегии</h3>
               <ul class="utility-list">
-                <li>HODL-уровни</li>
-                <li>Эксклюзивные NFT</li>
-                <li>Голосование в DAO</li>
-                <li>Кэшбэк до 5%</li>
+                <li>HODL-программы (Бронза → Платина)</li>
+                <li>Скидки до 100% для держателей</li>
+                <li>VIP-статусы с премиальным доступом</li>
+                <li>Эксклюзивные NFT-паспорта</li>
               </ul>
             </div>
           </div>
-          
+
           <div class="cta-block">
             <h3>Стань частью революции</h3>
             <div class="cta-buttons">
-              <button href="https://t.me/your_bot" class="btn btn-gold buy-button" id="buyButton">Купить токен</button>
-              <button href="#" class="btn btn-outline">Вступить в DAO</button>
-              <button href="#" class="btn btn-outline">Следить за новостями</button>
+              <button class="btn btn-gold buy-button">Купить токен</button>
+              <button class="btn btn-outline">Вступить в DAO</button>
+              <button class="btn btn-outline">Следить за новостями</button>
             </div>
           </div>
         </div>
@@ -162,111 +221,262 @@
 
       <section class="genius-team" id="team">
         <div class="team-container scroll-animate">
-            <h2 class="section-title scroll-animate delay-100">КОМАНДА <span class="glitch-text">ГЕНИЕВ</span></h2>
-            <p class="team-subtitle scroll-animate delay-200">Создатели новой крипто-реальности</p>
-            
-            <div class="team-grid">
-                <div class="genius-card scroll-animate delay-100">
-                    <div class="genius-image-container">
-                        <img src="/images/human_mock.png" alt="Эйнштейн" class="genius-image">
-                    </div>
-                    <div class="genius-info">
-                        <h3>Альберт Эйнштейн</h3>
-                        <p class="genius-role">Главный визионер</p>
-                        <a href="https://t.me/einstein_genius" class="tg-link" target="_blank">
-                            <span class="tg-icon">TG</span> @einstein_genius
-                        </a>
-                    </div>
+          <h2 class="section-title scroll-animate delay-100">
+            КОМАНДА <span class="glitch-text">ГЕНИЕВ</span>
+          </h2>
+          <p class="team-subtitle scroll-animate delay-200">
+            Создатели новой крипто-реальности
+          </p>
+
+          <div class="team-grid">
+            <div class="genius-card scroll-animate delay-100">
+              <div class="genius-image-container">
+                <img
+                  src="/images/anastasia2.png"
+                  alt="Анастасия Бондарева"
+                  class="genius-image"
+                />
+              </div>
+              <div class="genius-info">
+                <div class="genius-info-main">
+                  <h3>Анастасия Бондарева</h3>
+                  <p class="genius-role">Сооснователь Города Гениев</p>
+                  <a
+                    href="https://t.me/a_a_bondareva"
+                    class="tg-link"
+                    target="_blank"
+                  >
+                    <span class="tg-icon">TG</span> @a_a_bondareva
+                  </a>
                 </div>
-                
-                <div class="genius-card scroll-animate delay-200">
-                    <div class="genius-image-container">
-                        <img src="/images/human_mock.png" alt="Илон Маск" class="genius-image">
-                    </div>
-                    <div class="genius-info">
-                        <h3>Илон Маск</h3>
-                        <p class="genius-role">Технологический пророк</p>
-                        <a href="https://t.me/musk_genius" class="tg-link" target="_blank">
-                            <span class="tg-icon">TG</span> @musk_genius
-                        </a>
-                    </div>
+                <div class="genius-info-details">
+                  <div class="detail-item">
+                    <span class="detail-label">Возраст:</span> 37 лет
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Локации:</span> Новосибирск –
+                    Констанц – Никосия - Крым
+                  </div>
+                  <div class="detail-item">
+                    Ленд-леди в Крыму, соавтор разработки 38 видов мышления
+                  </div>
+                  <div class="detail-item">
+                    Наставник мышления, философ-консультант по смыслам бизнеса 5
+                    млн+, спикер международных форумов
+                  </div>
+                  <div class="detail-item">
+                    Создатель бизнесов, которые доставляют удовольствие
+                  </div>
+                  <div class="detail-links">
+                    <a
+                      href="https://t.me/PROmindal"
+                      class="detail-link"
+                      target="_blank"
+                      >🏰 Город Гениев</a
+                    >
+                    <a
+                      href="https://t.me/Vasenev_Bondareva"
+                      class="detail-link"
+                      target="_blank"
+                      >🧠 Про мышление</a
+                    >
+                  </div>
                 </div>
-                
-                <div class="genius-card scroll-animate delay-300">
-                    <div class="genius-image-container">
-                        <img src="/images/human_mock.png" alt="Илья Кузьмин" class="genius-image">
-                    </div>
-                    <div class="genius-info">
-                        <h3>Илья Кузьмин</h3>
-                        <p class="genius-role">Блокчейн-архитектор</p>
-                        <a href="https://t.me/kuzmin_genius" class="tg-link" target="_blank">
-                            <span class="tg-icon">TG</span> @kuzmin_genius
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="genius-card scroll-animate delay-400">
-                    <div class="genius-image-container">
-                        <img src="/images/human_mock.png" alt="Андрей Мастер" class="genius-image">
-                    </div>
-                    <div class="genius-info">
-                        <h3>Андрей Мастер</h3>
-                        <p class="genius-role">Финансовый алхимик</p>
-                        <a href="https://t.me/master_genius" class="tg-link" target="_blank">
-                            <span class="tg-icon">TG</span> @master_genius
-                        </a>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <footer class="footer">
-      <div class="footer__container">
-          <div class="footer__content scroll-animate">
-              <div class="footer__logo reveal-element delay-100">
-                <a href="#">
-                  <img src="/images/icon.svg" alt="Genius Coin Logo"></a>
-                  <p class="footer__slogan">Интеллектуальный капитал новой эры. Земля. Свобода. Будущее.</p>
-                  <p class="footer__copyright">© 2025 Genius Coin. Все права защищены.</p>
+            <div class="genius-card scroll-animate delay-200">
+              <div class="genius-image-container">
+                <img
+                  src="/images/human_mock.png"
+                  alt="Андрей Мастер"
+                  class="genius-image"
+                />
               </div>
-              
-              <div class="footer__links reveal-element delay-200">
-                  <h3 class="footer__links-title">Навигация</h3>
-                  <ul class="footer__links">
-                      <li><a href="#about" class="smooth-scroll">О проекте</a></li>
-                      <li><a href="#utility">Экосистема использования</a></li>
-                      <li><a href="#team">Команда</a></li>
-                  </ul>
+              <div class="genius-info">
+                <div class="genius-info-main">
+                  <h3>Андрей Мастер</h3>
+                  <p class="genius-role">
+                    Ментор <br />
+                    Наставник Миллиардеров
+                  </p>
+                  <a
+                    href="https://t.me/andreymaster"
+                    class="tg-link"
+                    target="_blank"
+                  >
+                    <span class="tg-icon">TG</span> @andreymaster
+                  </a>
+                </div>
+                <div class="genius-info-details">
+                  <div class="detail-item">
+                    <span class="detail-label">Возраст:</span> 55 лет
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Локации:</span>
+                    СПб-Магадан-Майами-Буэнос-Айрес
+                  </div>
+                  <div class="detail-item">
+                    Создатель RIO Global Invest Club
+                  </div>
+                  <div class="detail-item">15 источников пассивного дохода</div>
+                  <div class="detail-item">
+                    Создатель самой крупной компании в РФ по Автодомам - более
+                    100 единиц техники
+                  </div>
+                  <div class="detail-links">
+                    <a
+                      href="https://rioinvestclub.com"
+                      class="detail-link"
+                      target="_blank"
+                      >🌍 RIO Global Invest Club</a
+                    >
+                    <a
+                      href="https://instagram.com/andrey.master.biz?igshid=YmMyMTA2M2Y="
+                      class="detail-link"
+                      target="_blank"
+                      >📸 Личный IG</a
+                    >
+                    <a
+                      href="https://vk.com/mcamper1"
+                      class="detail-link"
+                      target="_blank"
+                      >✉️ Личный VK</a
+                    >
+                  </div>
+                </div>
               </div>
-              
-              <div class="footer__links reveal-element delay-300">
-                  <h3 class="footer__links-title">Ресурсы</h3>
-                  <ul class="footer__links">
-                      <li><a href="#">Политика конфиденциальности</a></li>
-                      <li><a href="#">Условия использования</a></li>
-                  </ul>
+            </div>
+
+            <div class="genius-card scroll-animate delay-300">
+              <div class="genius-image-container">
+                <img
+                  src="/images/alexander2.png"
+                  alt="Александр Васенёв"
+                  class="genius-image"
+                />
               </div>
-              
-              <div class="footer__links reveal-element delay-400">
-                  <h3 class="footer__links-title">Сообщество</h3>
-                  <ul class="footer__links">
-                      <li><a href="#">Telegram</a></li>
-                      <li>
-                          <a href="https://t.me/your_bot" class="footer-link" data-tooltip="Наш умный бот-помощник">
-                              <span>Telegram</span>
-                              <span class="link-badge">бот</span>
-                          </a>
-                      </li>
-                      <li><a href="#">Whitepaper gitbook</a></li>
-                      <li><a href="#">Блокчейн-эксплорер</a></li>
-                  </ul>
+              <div class="genius-info">
+                <div class="genius-info-main">
+                  <h3>Александр Васенёв</h3>
+                  <p class="genius-role">Разработчик мышления</p>
+                  <a
+                    href="https://t.me/AVasenev"
+                    class="tg-link"
+                    target="_blank"
+                  >
+                    <span class="tg-icon">TG</span> @AVasenev
+                  </a>
+                </div>
+                <div class="genius-info-details">
+                  <div class="detail-item">
+                    <span class="detail-label">Возраст:</span> 52 года
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Локации:</span> Крым
+                  </div>
+                  <div class="detail-item">Создатель 15+ бизнесов с нуля</div>
+                  <div class="detail-item">
+                    Разработчик 38 видов мышления и курсов развития мышления
+                  </div>
+                  <div class="detail-item">
+                    Создал единственную в мире технологию получения белых рыбьих
+                    кож, спасающую планету от загрязнения отходами рыбной
+                    промышленности
+                  </div>
+                  <div class="detail-links">
+                    <a
+                      href="http://school-thinking.ru"
+                      class="detail-link"
+                      target="_blank"
+                      >🎓 Школа мышления</a
+                    >
+                    <a
+                      href="https://t.me/PROmindal"
+                      class="detail-link"
+                      target="_blank"
+                      >🏡 Усадебные посёлки</a
+                    >
+                    <a
+                      href="https://vk.com/oktet"
+                      class="detail-link"
+                      target="_blank"
+                      >✉️ Личный VK</a
+                    >
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-      </div>
-  </footer>
-      </main>
-      <script type="module" src="/src/main.js"></script>
+        </div>
+      </section>
 
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__content scroll-animate">
+            <div class="footer__logo reveal-element delay-100">
+              <a href="#">
+                <img src="/images/icon.svg" alt="Genius Coin Logo" />
+              </a>
+              <p class="footer__slogan">
+                Интеллектуальный капитал новой эры. Земля. Свобода. Будущее.
+              </p>
+              <p class="footer__copyright">
+                © 2025 Genius Coin. Все права защищены.
+              </p>
+            </div>
+
+            <div class="footer__links reveal-element delay-200">
+              <h3 class="footer__links-title">Навигация</h3>
+              <ul class="footer__links">
+                <li><a href="#about" class="smooth-scroll">О проекте</a></li>
+                <li><a href="#utility">Экосистема использования</a></li>
+                <li><a href="#team">Команда</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__links reveal-element delay-300">
+              <h3 class="footer__links-title">Ресурсы</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="/files/whitepaper.pdf" target="_blank"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li>
+                  <a href="/files/whitepaper.pdf" target="_blank"
+                    >Условия использования</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__links reveal-element delay-400">
+              <h3 class="footer__links-title">Сообщество</h3>
+              <ul class="footer__links">
+                <li><a href="#">Telegram</a></li>
+                <li>
+                  <a
+                    href="https://t.me/your_bot"
+                    class="footer-link"
+                    data-tooltip="Наш умный бот-помощник"
+                  >
+                    <span>Telegram</span>
+                    <span class="link-badge">бот</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/files/whitepaper.pdf" target="_blank"
+                    >Whitepaper gitbook</a
+                  >
+                </li>
+                <li><a href="#">Блокчейн-эксплорер</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

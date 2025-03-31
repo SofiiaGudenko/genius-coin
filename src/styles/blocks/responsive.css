@@ -1,93 +1,89 @@
-/* Обновленный медиазапрос для мобильных */
 @media (max-width: 1320px) {
-    .logo img {
-        max-width: 100%;
-    }
+  .logo img {
+    max-width: 100%;
+  }
 }
-
 
 @media (max-width: 768px) {
-    body {
-        background-position: center;
-        background-attachment: fixed;
-    }
-    
-    .hero {
-        padding: 0 var(--mobile-padding);
-        height: auto;
-        min-height: 100vh;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 22px;
-    }
-    
-    .logo {
+  body {
+    background-position: center;
+    background-attachment: fixed;
+  }
 
-    }
-    
-    .logo img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .slogan {
-        font-size: 1.5rem;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
-    
-    .buttons {
-        flex-direction: column;
-        width: 100%;
-        max-width: 300px;
-        gap: 12px;
-    }
-    
-    .btn {
-        width: 100%;
-        padding: 12px 20px;
-        font-size: 0.9rem;
-    }
-    
-    .ticker-wrap {
-        top: 10px;
-    }
-    
-    .ticker {
-        font-size: 0.8rem;
-    }
-    
-    .ticker span {
-        margin: 0 20px;
-    }
-    
-    .main-title {
-        font-size: 3rem;
-        margin-bottom: 15px;
-    }
-    
-    .gold-coin {
-        animation: shine 5s linear infinite;
-    }
-    
-    .logo, .slogan, .buttons {
-        opacity: 0;
-        transform: translateY(15px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
+  .hero {
+    padding: 0 var(--mobile-padding);
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 22px;
+  }
+
+  .logo {
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    max-width: 300px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .ticker-wrap {
+    top: 10px;
+  }
+
+  .ticker {
+    font-size: 0.8rem;
+  }
+
+  .ticker span {
+    margin: 0 20px;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  .gold-coin {
+    animation: shine 5s linear infinite;
+  }
+
+  .logo,
+  .slogan,
+  .buttons {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
 }
 
-/* Для очень маленьких экранов */
 @media (max-width: 480px) {
-    .slogan {
-        font-size: 1.3rem;
-    }
-    
-    .ticker {
-        font-size: 0.7rem;
-    }
-    
-    .hero::before {
-        opacity: 0.1;
-    }
+  .slogan {
+    font-size: 1.3rem;
+  }
+
+  .ticker {
+    font-size: 0.7rem;
+  }
+
+  .hero::before {
+    opacity: 0.1;
+  }
 }
