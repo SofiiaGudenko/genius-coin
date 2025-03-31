@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', serif;
     src: url('/fonts/Anton-Regular.woff2') format('woff2'),
         url('/fonts/Anton-Regular.woff') format('woff');
     font-weight: normal;
