@@ -27,6 +27,11 @@
     height: auto;
   }
 
+  .slogan__section {
+    height: 85vh;
+    justify-content: space-around;
+  }
+
   .slogan {
     font-size: 1.5rem;
     line-height: 1.4;
