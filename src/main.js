@@ -6,7 +6,7 @@ class GeniusCoinApp {
   init() {
     this.setupCoinEffects();
     this.initAnimations();
-    this.initCounter();
+    // this.initCounter();
   }
 
   setupCoinEffects() {
