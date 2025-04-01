@@ -102,59 +102,74 @@
   }
   
   /* CTA Block */
+  /* CTA Block */
+.cta-block {
+  text-align: center;
+  margin: 80px auto 0;
+  padding: 40px;
+  background: rgba(26, 26, 46, 0.5);
+  border-radius: 15px;
+  border: 1px solid var(--accent);
+  backdrop-filter: blur(10px);
+  max-width: 100%; /* Добавляем ограничение по ширине */
+  box-sizing: border-box; /* Учитываем padding в общей ширине */
+}
+
+.cta-block h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--accent);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Общие стили для всех кнопок */
+.btn {
+  box-sizing: border-box; /* Важно для правильного расчета размеров */
+  padding: 12px 24px;
+  white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
   .cta-block {
-    text-align: center;
-    margin-top: 80px;
-    padding: 40px;
-    background: rgba(26, 26, 46, 0.5);
-    border-radius: 15px;
-    border: 1px solid var(--accent);
-    backdrop-filter: blur(10px);
+    padding: 25px 15px; /* Уменьшаем отступы */
+    margin: 60px 15px 0; /* Добавляем боковые отступы */
+    width: calc(100% - 30px); /* Учитываем margin */
   }
   
   .cta-block h3 {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
   
   .cta-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch; /* Растягиваем на всю ширину */
+    gap: 12px;
+    width: 100%;
   }
   
-  .btn-outline {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: var(--accent);
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: none; /* Убираем ограничение */
+    padding: 10px 15px; /* Уменьшаем padding */
+    font-size: 0.9rem; /* Уменьшаем шрифт при необходимости */
   }
-  
-  .btn-outline:hover {
-    background: var(--accent);
-    color: #000;
-  }
-  
-  @media (max-width: 768px) {
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center; /* Центрируем кнопки */
-        gap: 15px; /* Уменьшаем промежутки */
-    }
-    
-    .cta-buttons .btn {
-        width: 100%;
-        max-width: 280px; /* Чуть шире для мобильных */
-        margin: 0; /* Убираем auto, так как есть align-items */
-    }
-    
-    .cta-block {
-        padding: 30px 20px; /* Уменьшаем отступы */
-    }
-    
-    .cta-block h3 {
-        font-size: 1.5rem; /* Уменьшаем заголовок */
-        margin-bottom: 20px;
-    }
 }
